@@ -3,3 +3,4 @@ y = int(input("Enter y: "))  # Ask the user for y
 z = int(input("Enter z: "))  # Ask the user for z
 
 print(x + y + z) # Print the sum of x, y, and z
+print(x - y - z) # Print the difference of x, y, and z
