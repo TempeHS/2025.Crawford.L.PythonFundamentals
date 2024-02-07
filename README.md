@@ -22,7 +22,7 @@
 # Commonly used commands
 ## Bash Commands 
 1. `clear` clear the terminal window
-2. `ls` list files and folders in the active folder
+2. `ls` lists files and folders in the active folder
 3. `cp [source name] [destination name]` copy a file or folder, example `cp hello.py goodbye.py` copies the file `hello.py` and saves it as `goodbye.py`
 4. `mv [target file] [new name]` rename a file or folder, example `mv hello.py hi.py` renames the file `hello.py` to `hi.py`
 5. `rm [target file]` removes (deletes) the target file, example `rm hi.py`
@@ -36,13 +36,13 @@
 2. `python hello.py` execute the python program
 
 ## Git commands
-1. Pull latest code from the repository
+1. Pull the latest code from the repository
 
 		git pull
 2. Add indoor.py to the changes to be committed
 
 		git add [file name]
-3. Add all chnaged files to the changes to be committed
+3. Add all changed files to the changes to be committed
 
 		git add -A
 3. Commit all changes in the REPO with comments
@@ -55,9 +55,9 @@
 # How to setup your workspace
 1. Fork this repository
 ![](images/fork.png "")
-2. Correctly name your new reposity
+2. Correctly name your new repository
 ![](images/fork2.png "")
-3. Open either a virtual or local itegrated developer environment
+3. Open either a virtual or local integrated developer environment
 - Run a virtual codespace
 ![](images/codespace.png "")
 _Wait until you see the README.md so your CodeSpace is fully configured_
