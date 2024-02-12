@@ -1,10 +1,10 @@
-def hello(to):
+def hello(to="World"):
 	to = to.strip().title()
-	print(f"Hello, {name}!")
+	print(f"Hello, {to}!")
 
+def main():
+	hello(
+		input("What is your name? ")
+	)
 
-name = input("What's your name? ")  # Ask the user for their name
-
-  # Clean up the name
-# first, last = name.split(" ")  # Split the name into first and last
-print(f'Hello, "{name}"!')  # Print the user's name
+main()
