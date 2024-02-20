@@ -28,7 +28,7 @@
 5. `rm [target file]` removes (deletes) the target file, example `rm hi.py`
 6. `mkdir [name]` makes a new folder (directory), example `mkdir myFolder`
 7. `rmdir [child folder name]` removes a child folder (directory) of the active folder, example `rmdir myFolder`
-7. `cd [child folder name] changes the active folder, example `cd myFolder`
+7. `cd [child folder name]` changes the active folder, example `cd myFolder`
 8. `..` move to the parent folder, example `cd ..`moves the active folder to the parent folder
 
 ## Python Commands
