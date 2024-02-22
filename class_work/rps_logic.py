@@ -12,7 +12,7 @@ def generate_random():
 
 draw = "The result is a draw."
 win = "The result is a win."
-lose = "The rusult is a loss."
+lose = "The result is a loss."
 
 player_choice = input("Rock, Paper or Scissors? ").strip().casefold()
 computer_choice = generate_random()
