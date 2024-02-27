@@ -9,7 +9,6 @@ def generate_random():
 	else:
 		return "scissors"
 	
-
 draw = "The result is a draw."
 win = "The result is a win."
 lose = "The result is a loss."
