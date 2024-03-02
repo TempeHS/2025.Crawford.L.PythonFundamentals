@@ -23,18 +23,19 @@ while True:
 		continue
 	if c < len(name):
 		continue
-	else: 
+	else:
 		break
 
-# Just a complicated do while loop.
-
+'''
+Why is this do while loop so complicated?
+'''
 
 print(name)
 
 '''
 Below is another way to solve the problem.
 It takes each character of the string, ckecks it and then appends no matter what it to a new string. It may not be the most efficient way to solve the problem.
-The above solution checks each character of the string and then replaces it with the camel case version. It is more efficient than the below solution. 
+The above solution checks each character of the string and then replaces it with the camel case version.  
 '''
 # 
 # result = []
