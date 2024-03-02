@@ -15,9 +15,9 @@ while True:
 	elif name[c].islower():
 		c += 1
 		'''
-  		NtS: If the elif statement is not included, the loop will run indefinitely. 
-    	(I thought it would stop when the condition is not met, but it doesn't.)
-    	'''
+		NtS: If the elif statement is not included, the loop will run indefinitely. 
+		(I thought it would stop when the condition is not met, but it doesn't.)
+		'''
 	else:
 		c += 1
 		continue
@@ -27,7 +27,7 @@ while True:
 		break
 
 # Just a complicated do while loop.
-		
+
 
 print(name)
 
