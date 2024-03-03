@@ -11,7 +11,7 @@ c = 0
 while True:
 	if name[c].isupper():
 		name = name[:c] + '_' + name[c].lower() + name[c+1:]
-		c += 1
+		# c += 1
 	elif name[c].islower():
 		c += 1
 		'''
