@@ -5,30 +5,32 @@ numbers = "0123456789"
 no_letters = 0
 no_numbers = 0
 
-# while True:
-# 	request = input("Request plate: ")
-# 	# print(len(request))
-# 	# print(request[len(request)-1])
-# 	if 2 <= len(request) <= 6:
-# 		print(f"'{request}' is within the allowed length.")
-# 		c = 0
-# 		while c < len(request):
-# 			if request[c] not in allowed_char:
-# 				if request[c] in lower_case:
-# 					print(f"invalid. '{request[c]}' is a lower case letter. please enter with capital letters.")
-# 					break
-# 				else:
-# 					print(f"invalid. '{request[c]}' is not a valid character.")
-# 					break
-# 			else:
-# 				c += 1
-# 				continue
-# 		else:
-# 			print(f"'{request}' is a valid plate.")
-# 			break
-# 	else:
-# 		print("Invalid. Please enter a valid plate request.")
-# 		continue
+'''
+while True:
+	request = input("Request plate: ")
+	# print(len(request))
+	# print(request[len(request)-1])
+	if 2 <= len(request) <= 6:
+		print(f"'{request}' is within the allowed length.")
+		c = 0
+		while c < len(request):
+			if request[c] not in allowed_char:
+				if request[c] in lower_case:
+					print(f"invalid. '{request[c]}' is a lower case letter. please enter with capital letters.")
+					break
+				else:
+					print(f"invalid. '{request[c]}' is not a valid character.")
+					break
+			else:
+				c += 1
+				continue
+		else:
+			print(f"'{request}' is a valid plate.")
+			break
+	else:
+		print("Invalid. Please enter a valid plate request.")
+		continue
+'''
 
 def len_query(request):
 	if 2 <= len(request) <= 6:
@@ -57,7 +59,6 @@ def char_check(request):
 
 def last_char(request):
 	if request[len(request)-1] in numbers:
-		print(f"'{request[len(request)-1]}' is a number.")
 		return True
 	else:
 		print(f"Invalid. '{request[len(request)-1]}' is a letter. Please enter a number in the last character.")
@@ -65,8 +66,13 @@ def last_char(request):
 
 def first_char(request):
 	if request[0] in letters:
-		print(f"'{request[0]}' is a letter.")
 		return True
+	elif request[0] in "0":
+		print("Invalid. Please enter another number other than '0' in the first character.")
 	else:
 		print(f"Invalid. '{request[0]}' is a number. Please enter a letter in the first character.")
 		return False
+
+input_plate = input("Request plate: ")
+if len_query(input_plate) and char_check(input_plate) and last_char(input_plate) and first_char(input_plate):
+	print(f"Valid. Plate '{input_plate}' is accepted.")
