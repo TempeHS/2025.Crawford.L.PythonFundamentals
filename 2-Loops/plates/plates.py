@@ -73,6 +73,10 @@ def first_char(request):
 		print(f"Invalid. '{request[0]}' is a number. Please enter a letter in the first character.")
 		return False
 
-input_plate = input("Request plate: ")
-if len_query(input_plate) and char_check(input_plate) and last_char(input_plate) and first_char(input_plate):
-	print(f"Valid. Plate '{input_plate}' is accepted.")
+while True:
+	input_plate = input("Request plate: ")
+	if len_query(input_plate) and char_check(input_plate) and last_char(input_plate) and first_char(input_plate):
+		print(f"Valid. Plate '{input_plate}' is accepted.")
+		break
+	else:
+		continue
