@@ -187,7 +187,7 @@ Notice that a t-rex is now saying “hello”.
 
 You now can see how you could install third-party packages.
 You can learn more on PyPI’s entry for `cowsay`
-You can find other third-party packages at [PyPI](https://pypi.org/)
+You can find other third-party packages at [PyPI](https://pypi.org/).
 
 ### APIs
 APIs or “application program interfaces” allow you to connect to the code of others.
