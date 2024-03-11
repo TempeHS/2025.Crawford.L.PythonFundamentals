@@ -1,12 +1,13 @@
-import random
-
-cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
-suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
-random.shuffle(cards)
-random.shuffle(suits)
-
-def draw_card():
-    return cards.pop() + ' of ' + suits.pop()
-
-print (draw_card())
-
+import sys
+if len(sys.argv) > 2:
+    print("Too many arguments.")
+    sys.exit(1)
+elif len(sys.argv) < 2:
+    print("You have not entered your name as an argument.")
+    sys.exit(1)
+else: 
+    print(f"Hello, your name is {sys.argv[1]}!", end=" ")
+    print(f"You have ran the file '{sys.argv[0]}'.")
+# except IndexError:
+#     print("You have not entered your name as an argument.")
+    
