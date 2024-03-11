@@ -1,3 +1,4 @@
 import random
 
-random.choice(["heads", "tails"])
+yes = random.choice(["heads", "tails"])
+print(yes)
