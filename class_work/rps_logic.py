@@ -13,33 +13,52 @@ draw = "The result is a draw."
 win = "The result is a win."
 lose = "The result is a loss."
 
-player_choice = input("Rock, Paper or Scissors? ").strip().casefold()
-computer_choice = generate_random()
-match computer_choice:
-	case "rock":
-		if player_choice == "paper":
-			print(win)
-		elif player_choice == "scissors":
-			print(lose)
-		else:
-			print(draw)
-	case "paper":
-		if player_choice == "scissors":
-			print(win)
-		elif player_choice == "rock":
-			print(lose)
-		else:
-			print(draw)
-	case "scissors":
-		if player_choice == "rock":
-			print(win)
-		elif player_choice == "paper":
-			print(lose)
-		else:
-			print(draw)
-	case _:
-		print("Invalid choice. Please type a valid choice.")
-		exit()
+no_games = 0
+
+while True:
+	try:
+		request_games = int(input("No. of games?").strip())
+	except ValueError:
+		print("Invalid number of games. Please enter a number ")
+	else:
+		break
+
+while no_games < request_games:
+	player_choice = input("Rock, Paper or Scissors? ").strip().casefold()
+	computer_choice = generate_random()
+	match computer_choice:
+		case "rock":
+			if player_choice == "paper":
+				print(win)
+				no_games += 1
+			elif player_choice == "scissors":
+				print(lose)
+				no_games += 1
+			else:
+				print(draw)
+				no_games += 1
+		case "paper":
+			if player_choice == "scissors":
+				print(win)
+				no_games += 1
+			elif player_choice == "rock":
+				print(lose)
+				no_games += 1
+			else:
+				print(draw)
+				no_games += 1
+		case "scissors":
+			if player_choice == "rock":
+				print(win)
+				no_games += 1
+			elif player_choice == "paper":
+				print(lose)
+				no_games += 1
+			else:
+				print(draw)
+				no_games += 1
+		case _:
+			print("Invalid choice. Please type a valid choice.")
 
 '''
 Psudocode:
