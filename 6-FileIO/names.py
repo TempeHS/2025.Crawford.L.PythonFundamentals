@@ -18,7 +18,7 @@
 # with open("names.txt", "r") as file:
 #     for line in sorted(file):
 #         names.append(line.rstrip())
-        
+		
 # for name in names:
 #     print(f"Hello {name}!")
 
@@ -27,21 +27,12 @@
 #         name, house = line.rstrip().split(",")
 #         print(f"{name} is in {house}.")
 
+
+import csv
 students = []
-
 with open("names.csv") as file:
-    for line in file:
-        name, house = line.rstrip().split(",")
-        student = {'name': name, 'house': house}
-        # student['name'] = name
-        # student['house'] = house
-        students.append(student)
-        
-def get_name(student):
-    return student['name']
-
-def get_house(student):
-    return student['house']
-
-for student in sorted(students, key=get_house):
-    print(f"{student['name']} is in {student['house']}.")
+	reader = csv.DictReader(file)
+	for row in reader: # for row in reader:
+		students.append({'name': row['name'], 'home': row['home'], 'house': row['house']})
+for student in sorted(students, key=lambda student: student['name']):
+	print(f"{student['name']} is from {student['home']} and in house {student['house']}.")
