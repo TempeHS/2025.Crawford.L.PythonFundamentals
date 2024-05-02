@@ -34,7 +34,6 @@ while True:
 		# elif init == "4":
 		# 	print("Exit")
 		# 	break
-		
 '''
 I don't know if we have to handle exceptions or not.
 '''
