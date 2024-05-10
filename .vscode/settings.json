@@ -4,5 +4,6 @@
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "ms-python.black-formatter",
 	"editor.fontSize": 18,
-	"git.enableCommitSigning": true
+	"git.enableCommitSigning": true,
+	"python.analysis.autoImportCompletions": true
 }
