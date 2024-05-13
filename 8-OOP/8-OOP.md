@@ -1,4 +1,4 @@
-[Home](../README.md)
+[Home](../README.md) | [Prev Lecture](../7-RegularExpressions/7-RegularExpressions.md)
 
 # Lecture 8 - Object-Oriented Programming
 

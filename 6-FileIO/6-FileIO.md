@@ -1,4 +1,4 @@
-[Home](../README.md) | [Prev Lecture](../5-UnitTests/5-UnitTests.md) | Next Lecture ()
+[Home](../README.md) | [Prev Lecture](../5-UnitTests/5-UnitTests.md) | [Next Lecture](../7-RegularExpressions/7-RegularExpressions.md)
 
 # Lecture 6 - File IO
 

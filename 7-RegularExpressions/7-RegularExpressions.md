@@ -1,4 +1,4 @@
-[Home](../README.md)
+[Home](../README.md) | [Prev Lecture](../6-FileIO/6-FileIO.md) | [Next Lecture](..\8-OOP\8-OOP.md)
 
 > [!IMPORTANT] 
 > **Optional Lecture, _complete after core lectures!_**
