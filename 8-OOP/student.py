@@ -12,10 +12,3 @@ class Student:
 		name = input("Name: ")
 		house = input("House: ")
 		return cls(name, house)
-
-
-def main():
-	s_h = Student.get()
-	print(s_h)
-
-main()
