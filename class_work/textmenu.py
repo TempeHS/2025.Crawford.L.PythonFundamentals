@@ -22,7 +22,7 @@ while True:
 			case "4":
 				print("Exit")
 				break
-  		# if init == "1":
+		# if init == "1":
 		# 	print("Option 1 picked.")
 		# 	continue
 		# elif init == "2":
