@@ -1,11 +1,13 @@
 pi = 3.14
 
 class Shape:
-	def __init__(self) -> None:
-		pass
-	def __str__(self) -> str:
-		return f"{self.colour.title()} {self.shape.title()}; X: {self.x}, Y: {self.y}, Z: {self.z}."
-
+	def __init__(self, type, colour, x, y, z) -> None:
+		self.type = type
+		self.colour = colour
+		self.x = x
+		self.y = y
+		self.z = z
+	
 	@property
 	def shape(self):
 		return self._shape
@@ -45,6 +47,10 @@ class Shape:
 	@z.setter
 	def z(self, z):
 		self._z = z
+	
+	def getPos(self):
+		return f"{self.colour} {self.type}; X: {self.x}, Y: {self.y}, Z: {self.z}."
+
 
 
 
@@ -52,7 +58,8 @@ class Shape:
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 def main():
-	cube = Shape_crs_sect("Cube", "Red", 10, 9, 8)
+	cube = Shape("Cube", "Red", 10, 9, 8)
+	print(cube.getPos())
 
-if __name__	== "main":
-    main()
+if __name__	== "__main__":
+	main()
