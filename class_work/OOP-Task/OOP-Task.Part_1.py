@@ -1,12 +1,8 @@
 pi = 3.14
 
 class Shape:
-	def __init__(self, shape, colour, x, y, z) -> None:
-		# self.shape = str(shape)
-		self.colour = str(colour)
-		# self.x = int(x)
-		self.y = int(y)
-		self.z = int(z)
+	def __init__(self) -> None:
+		pass
 	def __str__(self) -> str:
 		return f"{self.colour.title()} {self.shape.title()}; X: {self.x}, Y: {self.y}, Z: {self.z}."
 
@@ -33,6 +29,22 @@ class Shape:
 	@x.setter
 	def x(self, x):
 		self._x = x
+
+	@property
+	def y(self):
+		return self._y
+
+	@y.setter
+	def y(self, y):
+		self._y = y
+
+	@property
+	def z(self):
+		return self._z
+
+	@z.setter
+	def z(self, z):
+		self._z = z
 
 
 
