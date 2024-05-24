@@ -22,6 +22,7 @@ class Shape:
 	
 	@colour.setter
 	def colour(self, colour):
+		# if colour not in []:
 		self._colour = colour
 
 	@property
@@ -53,12 +54,10 @@ class Shape:
 
 
 
-
-
-
 # -------------------------------------------------------------------------------------------------------------------------------------------
 def main():
 	cube = Shape("Cube", "Red", 10, 9, 8)
+	# cube = Shape("Cube", None, 10, 9, 8)
 	print(cube.getPos())
 
 if __name__	== "__main__":
